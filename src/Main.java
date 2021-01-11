@@ -14,7 +14,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("uiV2.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("../path/to/uiV2.fxml"));
 
         stage.setTitle("Resistance Welding");
         stage.setScene(new Scene(root, 900, 600));
