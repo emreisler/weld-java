@@ -1,6 +1,6 @@
 # weld-java
 Java version of resistance welding app
-The application has couple open issues to be issued.
+The application has couple open issues.
 Not released.
 
 
