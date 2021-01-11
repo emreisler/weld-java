@@ -22,25 +22,10 @@ public class ConnectToDatabase {
     Connection conn = null;
     
     
-    String url = "jdbc:sqlite:C:/Users/Administrator/Desktop/java/FX/database.db";
+    String url = "jdbc:sqlite:%path-to-database-file%database.db";
     String currentTableName;
     DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy_MM_dd__HH_mm_ss");
-    /*
-    public ConnectToDatabase(){
-        try {
-            
-            this.conn = DriverManager.getConnection(this.url);
-            System.out.println("####################################################");
-            System.out.println("Connection to SQLite has been established.");
-            System.out.println("####################################################");
-        } catch (SQLException e) {
-            System.out.println("####################################################");
-            System.out.println("Couldn' t connect to database because of : "+e);
-            System.out.println("####################################################");
-            System.out.println(e.getMessage());
-        } 
-    }
-    */
+    
     public void connect() {
         if (this.conn == null){
             try {
@@ -166,29 +151,7 @@ public class ConnectToDatabase {
             Statement stmt = this.conn.createStatement();
         
             ResultSet rs  = stmt.executeQuery(sqlSorgu);
-            /*
-            while (rs.next()) {
-                
-                System.out.println("in");
-                /*
-                System.out.println("cycle_time : " + rs.getString("cycle_time") + "\n" +
-                                   "Voltage : " + rs.getDouble("voltage")  +"\n" + 
-                                   "Current : " + rs.getDouble("current")  +"\n" +
-                                   "Resistance : " + rs.getDouble("resistance")  +"\n" +
-                                   "TC1 : " + rs.getInt("tc1")  +"\n" +
-                                   "TC2 : " + rs.getInt("tc2")  +"\n" +
-                                   "TC3 : " + rs.getInt("tc3")  +"\n" +
-                                   "TC4 : " + rs.getInt("tc4")  +"\n" +
-                                   "TC5 : " + rs.getInt("tc5")  +"\n" +
-                                   "TC6 : " + rs.getInt("tc6")  +"\n" +
-                                   "TC7 : " + rs.getInt("tc7")  +"\n" +
-                                   "TC8 : " + rs.getInt("tc8")  +"\n" +
-                                   "TC9 : " + rs.getInt("tc9")  +"\n" +
-                                   "TC10 : " + rs.getInt("tc10")  +"\n"
-                                   );
-                 
-            }
-            */
+            
         }
         catch(Exception e){
             System.out.println("####################################################");
