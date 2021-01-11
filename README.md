@@ -10,3 +10,5 @@ EasyModbusJava.jar
 sqlite-jdbc-3.27.2.1.jar
 JVisa.jar
 jna-5.5.0.jar
+
+***Download Jar file and use executables run.bat (windows), run.sh (linux) to launch***
