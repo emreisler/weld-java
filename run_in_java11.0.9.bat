@@ -1,0 +1,1 @@
+java --module-path C:\Users\Administrator\Desktop\java\javafx-sdk-15.0.1/lib --add-modules javafx.controls,javafx.fxml,javafx.graphics,javafx.web -jar ResistanceWeldingApplication-Java11.0.9.jar
