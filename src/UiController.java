@@ -1,13 +1,3 @@
- /**
- * UI' deki tc label' leri PLC' ye bind et.
- * UI' deki ps label' leri PpwerSupply' a bind et.
- * Can i bind chart datas to variables.(Not needed)
- * PLC ve Power Supply obj. property' leri getter ve setter lar ile sağlanmalı.
- * App' i kapatınca ScheduledExecutor devam ediyor.
- * runCycle içinde ui üzrindeki logLabel' ın textini değiştiremedim.
- * Bir objeyle çalıştıktan sonra ramden onu silmek gerekli midir? Garbage collector bunu yapar mı?
- */
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.text.Text;
